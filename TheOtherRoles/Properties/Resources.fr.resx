@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ArsonistWins" xml:space="preserve">
+    <value>Victoire du Pyromane</value>
+  </data>
+  <data name="ChangedColorSuccesfully" xml:space="preserve">
+    <value>Changement de couleur réussi</value>
+  </data>
+  <data name="ConfirmSwap" xml:space="preserve">
+    <value>Confirmer l'échange</value>
+  </data>
+  <data name="CrewmateRoleSettings" xml:space="preserve">
+    <value>Paramètres du rôle d'Équipier</value>
+  </data>
+  <data name="Designby" xml:space="preserve">
+    <value>Design réalisé par</value>
+  </data>
+  <data name="EnableSoundEffects" xml:space="preserve">
+    <value>Activer les effets sonores</value>
+  </data>
+  <data name="GhostsCanAdditionallySeeModifier" xml:space="preserve">
+    <value>Les fantômes peuvent également voir les modificateurs</value>
+  </data>
+  <data name="GhostsCanSeeRoles" xml:space="preserve">
+    <value>Les fantômes peuvent voir les rôles</value>
+  </data>
+  <data name="GhostsCanSeeVotes" xml:space="preserve">
+    <value>Les fantômes peuvent voir les votes</value>
+  </data>
+  <data name="GhostsSeeTasksAndOtherInfo" xml:space="preserve">
+    <value>Les fantômes voient les tâches et d'autres informations</value>
+  </data>
+  <data name="Guesser" xml:space="preserve">
+    <value>Devineur</value>
+  </data>
+  <data name="HideNSeek" xml:space="preserve">
+    <value>Cache Cache</value>
+  </data>
+  <data name="HideNSeekRoleSettings" xml:space="preserve">
+    <value>Paramètres des rôles de Cache-cache</value>
+  </data>
+  <data name="HideNSeekSettings" xml:space="preserve">
+    <value>Paramètres de Cache-cache</value>
+  </data>
+  <data name="Hunter" xml:space="preserve">
+    <value>Chasseur</value>
+  </data>
+  <data name="ImpostorRoleSettings" xml:space="preserve">
+    <value>Paramètres du rôle d'Imposteur</value>
+  </data>
+  <data name="InvalidSizeUsage" xml:space="preserve">
+    <value>Taille invalide\nUtilisation : /size {montant}</value>
+  </data>
+  <data name="JesterWins" xml:space="preserve">
+    <value>Victoire du Bouffon</value>
+  </data>
+  <data name="LobbySizeChanged" xml:space="preserve">
+    <value>La taille du lobby a été modifiée à {LobbyLimit} joueurs</value>
+  </data>
+  <data name="LobbySizeIsTheSame" xml:space="preserve">
+    <value>La taille du lobby est déjà de {LobbyLimit}</value>
+  </data>
+  <data name="LoversAndCrewmatesWin" xml:space="preserve">
+    <value>Victoire des Amoureux et des Crewmate </value>
+  </data>
+  <data name="LoversWin" xml:space="preserve">
+    <value>Victoire des Amoureux</value>
+  </data>
+  <data name="Minidied" xml:space="preserve">
+    <value>Mini est mort</value>
+  </data>
+  <data name="Moddedby" xml:space="preserve">
+    <value>Moddé par</value>
+  </data>
+  <data name="ModifierSettings" xml:space="preserve">
+    <value>Paramètres du modificateur</value>
+  </data>
+  <data name="ModOptions" xml:space="preserve">
+    <value>Options du Mod...</value>
+  </data>
+  <data name="MoreOptions" xml:space="preserve">
+    <value>Plus d'Options...</value>
+  </data>
+  <data name="Neutral" xml:space="preserve">
+    <value>Neutre</value>
+  </data>
+  <data name="NeutralRoleSettings" xml:space="preserve">
+    <value>Paramètres du rôle d'Imposteur</value>
+  </data>
+  <data name="Page" xml:space="preserve">
+    <value>Page</value>
+  </data>
+  <data name="PlayersAndRolesAtTheEndOfTheGame" xml:space="preserve">
+    <value>Joueurs et rôles à la fin de la partie</value>
+  </data>
+  <data name="PressTabOrPageNumberForMore" xml:space="preserve">
+    <value>Appuyez sur TAB ou le numéro de page pour plus d'informations..</value>
+  </data>
+  <data name="PropHunt" xml:space="preserve">
+    <value>Chasse Aux Objets</value>
+  </data>
+  <data name="PropHuntSettings" xml:space="preserve">
+    <value>Paramètres de Prop Hunt</value>
+  </data>
+  <data name="ProsecutorWins" xml:space="preserve">
+    <value>Victoire du Procureur</value>
+  </data>
+  <data name="RoleAndModifierRates" xml:space="preserve">
+    <value>Taux des rôles et des modificateurs</value>
+  </data>
+  <data name="ShowLighterDarker" xml:space="preserve">
+    <value>Afficher plus clair / plus sombre</value>
+  </data>
+  <data name="ShowRoleSummary" xml:space="preserve">
+    <value>Afficher le résumé des rôles</value>
+  </data>
+  <data name="SpecialThanksTo" xml:space="preserve">
+    <value>Remerciements particuliers à</value>
+  </data>
+  <data name="Swapping" xml:space="preserve">
+    <value>Échange</value>
+  </data>
+  <data name="Swaps" xml:space="preserve">
+    <value>Échanges</value>
+  </data>
+  <data name="TeamJackalWins" xml:space="preserve">
+    <value>Victoire de l'équipe des Jackals</value>
+  </data>
+  <data name="TheLawyerWinsWithTheClient" xml:space="preserve">
+    <value>Victoire de l'Avocat avec le client</value>
+  </data>
+  <data name="TheOtherRolesSettings" xml:space="preserve">
+    <value>Paramètres des autres rôles</value>
+  </data>
+  <data name="ThePursuerSurvived" xml:space="preserve">
+    <value>Le poursuivant a survécu</value>
+  </data>
+  <data name="Tiebreaker" xml:space="preserve">
+    <value>Briseur d'égalité</value>
+  </data>
+  <data name="TorGuesser" xml:space="preserve">
+    <value>TOR Devineur</value>
+  </data>
+  <data name="TorHideNSeek" xml:space="preserve">
+    <value>TOR Cache Cache</value>
+  </data>
+  <data name="TorPropHunt" xml:space="preserve">
+    <value>TOR Chasse Aux Objets</value>
+  </data>
+  <data name="UnableToParseColorUsage" xml:space="preserve">
+    <value>Impossible d'analyser l'identifiant de couleur\nUtilisation : /couleur {id}</value>
+  </data>
+  <data name="UseScrollWheelIfNecessary" xml:space="preserve">
+    <value>Utilisez la molette si nécessaire</value>
+  </data>
+  <data name="VanillaSettings" xml:space="preserve">
+    <value>Paramètres Vanilla</value>
+  </data>
+  <data name="VultureWins" xml:space="preserve">
+    <value>Victoire du Vautour</value>
+  </data>
+  <data name="WasThe" xml:space="preserve">
+    <value>était Le</value>
+  </data>
+  <data name="YouAreInLoveWith" xml:space="preserve">
+    <value>You are in love with {0}</value>
+  </data>
+  <data name="YourDeputyIs" xml:space="preserve">
+    <value>Votre adjoint est {0}</value>
+  </data>
+  <data name="YourSheriffIs" xml:space="preserve">
+    <value>Votre shérif est {0}</value>
+  </data>
+</root>

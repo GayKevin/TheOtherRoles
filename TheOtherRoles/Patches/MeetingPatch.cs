@@ -10,6 +10,7 @@ using TheOtherRoles.Players;
 using TheOtherRoles.Utilities;
 using UnityEngine;
 using Innersloth.Assets;
+using static Rewired.Data.Player_Editor;
 
 namespace TheOtherRoles.Patches {
     [HarmonyPatch]
@@ -252,13 +253,13 @@ namespace TheOtherRoles.Patches {
                 } else {
                     selections[i] = true;
                     renderer.color = Color.yellow;
-                    meetingExtraButtonLabel.text = Helpers.cs(Color.yellow, "Confirm Swap");
+                    meetingExtraButtonLabel.text = Helpers.cs(Color.yellow, LocalizationManager.Instance.GetString("ConfirmSwap"));
                 }
             } else if (selectedCount == 2) {
                 if (selections[i]) {
                     renderer.color = Color.red;
                     selections[i] = false;
-                    meetingExtraButtonLabel.text = Helpers.cs(Color.red, "Confirm Swap");
+                    meetingExtraButtonLabel.text = Helpers.cs(Color.red, LocalizationManager.Instance.GetString("ConfirmSwap"));
                 }
             }
         }
@@ -291,9 +292,9 @@ namespace TheOtherRoles.Patches {
                 AmongUsClient.Instance.FinishRpcImmediately(writer);
 
                 RPCProcedure.swapperSwap((byte)firstPlayer.TargetPlayerId, (byte)secondPlayer.TargetPlayerId);
-                meetingExtraButtonLabel.text = Helpers.cs(Color.green, "Swapping!");
+                meetingExtraButtonLabel.text = Helpers.cs(Color.green, LocalizationManager.Instance.GetString("Swapping")+"!");
                 Swapper.charges--;
-                meetingExtraButtonText.text = $"Swaps: {Swapper.charges}";
+                meetingExtraButtonText.text = $"{LocalizationManager.Instance.GetString("Swaps")}: {Swapper.charges}";
             }
         }
 
@@ -332,8 +333,8 @@ namespace TheOtherRoles.Patches {
                 swapperButtonList[i].OnClick.RemoveAllListeners();
                 swapperButtonList[i].OnClick.AddListener((System.Action)(() => swapperOnClick(copyI, __instance)));
             }
-            meetingExtraButtonText.text = $"Swaps: {Swapper.charges}";
-            meetingExtraButtonLabel.text = Helpers.cs(Color.red, "Confirm Swap");
+            meetingExtraButtonText.text = $"{LocalizationManager.Instance.GetString("Swaps")}: {Swapper.charges}";
+            meetingExtraButtonLabel.text = Helpers.cs(Color.red, LocalizationManager.Instance.GetString("ConfirmSwap"));
 
         }
 

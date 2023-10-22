@@ -3,6 +3,7 @@ using HarmonyLib;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using TheOtherRoles.Utilities;
 using UnityEngine;
 using static UnityEngine.UI.Button;
 
@@ -21,13 +22,13 @@ namespace TheOtherRoles.Patches {
             __instance.SetGameMode(GameModes.Normal);
             CustomGamemodes gm = (CustomGamemodes)((int) mode - 2);
             if (gm == CustomGamemodes.Guesser) {
-                __instance.GameModeText.text = "TOR Guesser";
+                __instance.GameModeText.text = LocalizationManager.Instance.GetString("TorGuesser");
                 TORMapOptions.gameMode = CustomGamemodes.Guesser;
             } else if (gm == CustomGamemodes.HideNSeek) {
-                __instance.GameModeText.text = "TOR Hide N Seek";
+                __instance.GameModeText.text = LocalizationManager.Instance.GetString("TorHideNSeek");
                 TORMapOptions.gameMode = CustomGamemodes.HideNSeek;
             } else if (gm == CustomGamemodes.PropHunt) {
-                __instance.GameModeText.text = "TOR Prop Hunt";
+                __instance.GameModeText.text = LocalizationManager.Instance.GetString("TorPropHunt");
                 TORMapOptions.gameMode = CustomGamemodes.PropHunt;
             }
             return false;
@@ -37,12 +38,12 @@ namespace TheOtherRoles.Patches {
         [HarmonyPatch(typeof(CreateOptionsPicker), nameof(CreateOptionsPicker.Refresh))]
         public static void Postfix(CreateOptionsPicker __instance) {
             if (TORMapOptions.gameMode == CustomGamemodes.Guesser) {
-                __instance.GameModeText.text = "TOR Guesser";
+                __instance.GameModeText.text = LocalizationManager.Instance.GetString("TorGuesser");
             }
             else if (TORMapOptions.gameMode == CustomGamemodes.HideNSeek) {
-                __instance.GameModeText.text = "TOR Hide N Seek";
+                __instance.GameModeText.text = LocalizationManager.Instance.GetString("TorHideNSeek");
             } else if (TORMapOptions.gameMode == CustomGamemodes.PropHunt) {
-                __instance.GameModeText.text = "TOR Prop Hunt";
+                __instance.GameModeText.text = LocalizationManager.Instance.GetString("TorPropHunt");
             }
         }
     }
@@ -64,9 +65,9 @@ namespace TheOtherRoles.Patches {
                     if (i <= 2)
                         chatLanguageButton.Text.text = DestroyableSingleton<TranslationController>.Instance.GetString(GameModesHelpers.ModeToName[entry], new Il2CppReferenceArray<Il2CppSystem.Object>(0));
                     else {
-                        chatLanguageButton.Text.text = i == 3 ? "TOR Guesser" : "TOR Hide N Seek";
+                        chatLanguageButton.Text.text = i == 3 ? LocalizationManager.Instance.GetString("TorGuesser") : LocalizationManager.Instance.GetString("TorHideNSeek");
                         if (i == 5)
-                            chatLanguageButton.Text.text = "TOR Prop Hunt";
+                            chatLanguageButton.Text.text = LocalizationManager.Instance.GetString("TorPropHunt");
                     }
                     chatLanguageButton.Button.OnClick.RemoveAllListeners();
                     chatLanguageButton.Button.OnClick.AddListener((System.Action)delegate {
